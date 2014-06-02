@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    TextTeaser: An automatic summarization application and API
+  </title>
+
+  <meta name="description" content="TextTeaser is an automatic summarization API. It uses a special algorithm formulated through research to summarize articles. It combines the power of Natural Language Processing and Machine Learning to produce good results.">
+  <meta name="keywords" content="TextTeaser, automatic summarization, summarizer"/>
+  
+  <meta property="og:title" content="TextTeaser: An automatic summarization application and API" />
+  <meta property="og:url" content="http://www.textteaser.com/"/>
+  <meta property="og:image" content="http://www.textteaser.com/assets/img/tt.png">
+  <meta property="og:site_name" content="TextTeaser"/>
+  <meta name="og:description" content="TextTeaser is an automatic summarization API. It uses a special algorithm formulated through research to summarize articles. It combines the power of Natural Language Processing and Machine Learning to produce good results.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="icon" href="assets/img/favicon_16x16.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/img/favicon_32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/img/favicon_64x64.png" sizes="64x64" type="image/png">
+  <link rel="icon" href="assets/img/favicon_128x128.png" sizes="128x128" type="image/png">
+
+  <link rel="stylesheet" href="assets/font-awesome-4.0.3/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,400italic" rel="stylesheet" type="text/css">
+
+  <style>
+    body {
+      background-color: #eee;
+    }
+    body, h1, h2, h3, h4, h5 , h6 {
+      font-family: 'Noto Sans', sans-serif;
+    }
+
+    .textteaser, .text-center h1 {
+      font-family: 'Crete Round', serif;
+      color: #dd4917;
+    }
+
+    .text-center h1 {
+      font-size: 48px;
+    }
+
+    .pricing_box {
+      border: 1px solid #0a968d;
+      box-shadow: 1px 1px 5px #8ddfda;
+      border-radius: 5px;
+      background-color: white;
+    }
+
+    .price_amount {
+      color: #dd4917;
+    }
+
+    .request_btn {
+      background-color: #0a968d;
+      color: white;
+    }
+
+    .request_btn_main {
+      font-size: 20px;
+    }
+
+    .request_btn:hover {
+      background-color: #8ddfda;
+      color: white;
+    }
+
+    .request_btn:focus {
+      background-color: #8ddfda;
+      color: white;
+    }
+
+    #footer_logo {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <a href="https://github.com/MojoJolo/textteaser"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <img src="assets/img/tt.png" width="70">
+        <h1>TextTeaser</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h4>An automatic summarization algorithm and API.</h4>
+        <br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-md-offset-3 text-center">
+        <h3>Algorithm</h3>
+        <p style="text-align: justify;">
+          TextTeaser uses a special algorithm formulated through research that extracts the most important sentences to summarize articles.
+        </p>
+      </div>
+      <div class="col-md-3 text-center">
+        <h3>API</h3>
+        <p style="text-align: justify;">
+          The TextTeaser API is a two step process that can be used by to obtain summaries for different kinds of articles.
+        </p>
+      </div>
+      <div class="col-md-12 text-center">
+        <br>
+        <button type="button" class="btn btn-default request_btn request_btn_main">Request a developer key</button>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3>Pricing &amp; Plans</h3>
+        <br>
+      </div>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="row">
+          <div class="col-md-5 pricing_box text-center">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th style="text-align: center;"><h2 class="price_amount">$12</h2></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>per 1000 articles</td>
+                </tr>
+                <tr>
+                  <td>public server</td>
+                </tr>
+                <tr>
+                  <td>default summarizer</td>
+                </tr>
+                <tr>
+                  <td>text only</td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td><button type="button" class="btn btn-default request_btn">Request a developer key</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-5 col-md-offset-2 pricing_box text-center">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th style="text-align: center;"><h2 class="price_amount">$250</h2></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>per month</td>
+                </tr>
+                <tr>
+                  <td>dedicated server</td>
+                </tr>
+                <tr>
+                  <td>train your own summarizer</td>
+                </tr>
+                <tr>
+                  <td>extraction from URL allowed</td>
+                </tr>
+                <tr>
+                  <td>email support</td>
+                </tr>
+                <tr>
+                  <td><button type="button" class="btn btn-default request_btn">Contact us</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row" id="footer">
+      <div class="col-md-2 col-md-offset-2">
+        <footer><span class="textteaser" id="footer_logo">TextTeaser</span> &copy; 2014</footer>
+      </div>
+      <div class="col-md-2">
+        <footer>
+          <a href="#">Request a key</a> | 
+          <a href="http://jpbalb.in/tagged/textteaser">Blog</a>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <br>
+</body>
+</html>
