@@ -80,12 +80,12 @@
     <br>
     <div class="row" id="content">
       <div class="col-md-12">
-        <h3 class="sub-header">Public API Documentation</h3>
+        <h3 class="sub-header">Dedicated API Documentation</h3>
         <p>
-          This is the documentation for the public API of TextTeaser. If you're looking for the documentation of the dedicated TextTeaser API, click <a href="dedicated_docs.html">here</a>.
+          This is the documentation for the dedicated TextTeaser API. If you're looking for the public API documentation, click <a href="public_docs.html">here</a>.
         </p>
         <p>
-          A developer key is needed to use TextTeaser. To request a key, email <a href="mailto:jolo@textteaser.com?subject=Requesting developer key for TextTeaser" target="_blank">jolo@textteaser.com</a>.
+          A dedicated TextTeaser API and a developer key are required for this documentation. Contact <a href="mailto:jolo@textteaser.com?subject=Dedicated instance of TextTeaser" target="_blank">jolo@textteaser.com</a> to learn more about it.
         </p>
         <p>
           Summarizing text in TextTeaser is a two step process: post the text to be added in the queue, and get the summary after it has been processed. A more detailed documentation is written below.
@@ -112,20 +112,36 @@
               <td>developer key</td>
             </tr>
             <tr>
+              <td>url</td>
+              <td>URL where the text was retrieved</td>
+            </tr>
+            <tr>
               <td>title</td>
-              <td>title of the text / article</td>
+              <td>(optional) title of the text / article</td>
             </tr>
             <tr>
               <td>text</td>
-              <td>text to be summarized</td>
+              <td>(optional) text to be summarized</td>
+            </tr>
+            <tr>
+              <td>source</td>
+              <td>(optional*) source of the text (ex: TechCrunch, Mashable, etc.)</td>
+            </tr>
+            <tr>
+              <td>category</td>
+              <td>(optional*) category the text belongs (ex: Technology, Sports, etc.)</td>
             </tr>
           </tbody>
         </table>
+        <em>*Adding the source and the category is optional but it is essential for TextTeaser to learn and improve the quality of the summaries.</em>
+        <br><br>
         Example:
         <pre>curl -X POST
 -d user="XvolRQgASJDgv31UVY5q"
 -d title="TextTeaser Lets Developers Integrate Text Summarization Into Their Apps And Sites"
--d text = "TextTeaser is a service that creates tl;dr (too long; didn't read) summaries for lengthly online articles. Available as a Web service and API on Mashape, TextTeaser's developers also want to turn it into the "imgur of text summarization" by making a platform for users to upload summaries of their favorite articles. The service was created by Jolo Balbin as part of his graduate research..."
+-d url="http://techcrunch.com/2013/10/06/textteaser-lets-developers-integrate-text-summarization-into-their-apps-and-sites/"
+-d source="TechCrunch"
+-d category="Technology"
 http://api.textteaser.com/post</pre>
         <br>
         Response:
