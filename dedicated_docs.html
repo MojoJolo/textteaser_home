@@ -64,13 +64,22 @@
     #footer_logo {
       font-size: 16px;
     }
+
+    .social-media {
+      color: #0a968d;
+    }
+
+    .social-media:hover {
+      text-decoration: none;
+      color: #8ddfda;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="row" id="topbar">
       <div class="col-md-4">
-        <a id="logo" class="textteaser" href="#">
+        <a id="logo" class="textteaser" href="index.html">
           <img src="assets/img/tt.png" width="50">
           &nbsp;
           TextTeaser
@@ -95,7 +104,7 @@
         <p>
           The first step to summarize text is to perform a POST request in this URL:
         </p>
-        <pre>http://api.textteaser.com/post</pre>
+        <pre>http://&lt;dedicated API subdomain&gt;.textteaser.com/post</pre>
         <br>
         And provide the following parameters:
         <br><br>
@@ -142,7 +151,7 @@
 -d url="http://techcrunch.com/2013/10/06/textteaser-lets-developers-integrate-text-summarization-into-their-apps-and-sites/"
 -d source="TechCrunch"
 -d category="Technology"
-http://api.textteaser.com/post</pre>
+http://jolo.textteaser.com/post</pre>
         <br>
         Response:
         <pre>{
@@ -153,7 +162,7 @@ http://api.textteaser.com/post</pre>
         <p>
           To retrieve the summary, perform a GET request in this URL:
         </p>
-        <pre>http://api.textteaser.com/get/&lt;developer_key&gt;/&lt;summary_id&gt;</pre>
+        <pre>http://&lt;dedicated API subdomain&gt;.textteaser.com/get/&lt;developer_key&gt;/&lt;summary_id&gt;</pre>
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -169,7 +178,7 @@ http://api.textteaser.com/post</pre>
           </tbody>
         </table>
         Example:
-        <pre>http://api.textteaser.com/get/XvolRQgASJDgv31UVY5q/69?count=3</pre>
+        <pre>http://jolo.textteaser.com/get/XvolRQgASJDgv31UVY5q/69?count=3</pre>
         <br>
         Response:
         <pre class="pre-scrollable">{
@@ -206,8 +215,15 @@ http://api.textteaser.com/post</pre>
       <div class="col-md-8">
         <footer>
           <a href="mailto:jolo@textteaser.com?subject=Requesting developer key for TextTeaser" target="_blank">Request a key</a> |
-          <a href="http://www.textteaser.com/public_docs.html">Documentation</a> | 
-          <a href="http://jpbalb.in/tagged/textteaser">Blog</a>
+          <a href="public_docs.html">Documentation</a> | 
+          <a href="about.html">About</a> | 
+          <a href="http://jpbalb.in/tagged/textteaser">Blog</a> |
+          <a href="https://www.facebook.com/Textteaser" class="social-media">
+            <i class="fa fa-facebook-square fa-lg"></i>
+          </a>
+          <a href="https://twitter.com/TextTeaser" class="social-media">
+            <i class="fa fa-twitter-square fa-lg"></i>
+          </a>
         </footer>
       </div>
     </div>
