@@ -42,6 +42,45 @@
       color: #dd4917;
       font-size: 43px;
     }
+
+    .text-center h3 {
+      /*text-shadow: 1px 1px 1px black;*/
+      color: #0a968d;
+    }
+
+    .content-box {
+      /*border: 1px solid black;*/
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    #img-box {
+      box-shadow: 8px 8px 10px #666;
+    }
+
+    #download-btn {
+      background-color: #0a968d;
+      color: white;
+    }
+
+    #download-btn:hover {
+      background-color: #8ddfda;
+      color: white;
+    }
+
+    #download-btn:focus {
+      background-color: #8ddfda;
+      color: white;
+    }
+
+    .social-media {
+      color: #0a968d;
+    }
+
+    .social-media:hover {
+      text-decoration: none;
+      color: #8ddfda;
+    }
   </style>
 </head>
 <body>
@@ -52,7 +91,55 @@
         TextTeaser
       </div>
     </div>
-    Summarize articles with a single click!
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3>Summarize articles with a single click!</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 content-box" id="sample-box">
+        <div id="img-box">
+          <img src="assets/img/sample.PNG" class="img-responsive" alt="TextTeaser Extension Example">
+        </div>
+      </div>
+      <div class="col-md-6 content-box" id="feature-box">
+        <p>
+          TextTeaser Extension allows you to summarize web articles easily.
+        </p>
+        <p>
+          This extension is not a replacement for the article. Although, TextTeaser can save your time by checking the summary first to determine if it's interesting before reading the entire article.
+        </p>
+        <section>
+          <h4>Features:</h4>
+            <ul>
+              <li>One click summary</li>
+              <li>View summary as a list or in paragraph form</li>
+              <li>Adjustable summary length</li>
+              <li>Unobtrusive reading experience</li>
+              <li>And it's free!</li>
+            </ul>
+        </section>
+        <br>
+        <a href="#">
+          <button type="button" class="btn btn-default" id="download-btn">Download for Chrome</button>
+        </a>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <footer>
+          <a href="about.html">About</a> | 
+          <a href="http://jpbalb.in/tagged/textteaser">Blog</a> |
+          <a href="https://www.facebook.com/Textteaser" class="social-media">
+            <i class="fa fa-facebook-square fa-lg"></i>
+          </a>
+          <a href="https://twitter.com/TextTeaser" class="social-media">
+            <i class="fa fa-twitter-square fa-lg"></i>
+          </a>
+        </footer>
+      </div>
+    </div>
   </div>
 
   <!-- GOOGLE ANALYTICS -->
