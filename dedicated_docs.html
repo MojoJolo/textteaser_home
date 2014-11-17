@@ -128,16 +128,12 @@
               <td>developer key</td>
             </tr>
             <tr>
-              <td>url</td>
-              <td>URL where the text was retrieved</td>
-            </tr>
-            <tr>
               <td>title</td>
-              <td>(optional) title of the text / article</td>
+              <td>title of the text / article</td>
             </tr>
             <tr>
               <td>text</td>
-              <td>(optional) text to be summarized</td>
+              <td>text to be summarized</td>
             </tr>
             <tr>
               <td>source</td>
@@ -155,7 +151,7 @@
         <pre>curl -X POST
 -d user="XvolRQgASJDgv31UVY5q"
 -d title="TextTeaser Lets Developers Integrate Text Summarization Into Their Apps And Sites"
--d url="http://techcrunch.com/2013/10/06/textteaser-lets-developers-integrate-text-summarization-into-their-apps-and-sites/"
+-d text = "TextTeaser is a service that creates tl;dr (too long; didn't read) summaries for lengthly online articles. Available as a Web service and API on Mashape, TextTeaser's developers also want to turn it into the "imgur of text summarization" by making a platform for users to upload summaries of their favorite articles. The service was created by Jolo Balbin as part of his graduate research..."
 -d source="TechCrunch"
 -d category="Technology"
 http://jolo.textteaser.com/post</pre>
